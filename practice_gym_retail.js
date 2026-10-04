@@ -43,12 +43,13 @@ do {
                     isOrderValid = true;
                     console.log("Hợp lệ! Mã đơn hàng: " + currentOrderCode);
                 }
-            }
+        }
+            
             break;
 
         case "2":
             if (isOrderValid === false) {
-                console.log("Chưa có mã hợp lệ!");
+                console.log("Chưa có mã hợp lệ!!!");
                 break;
             }
             let vip = prompt("Khách có thẻ VIP:");
@@ -58,6 +59,7 @@ do {
             let soGloves = 0;
             let soStrap = 0;
             let phanMon = currentOrderCode.slice(4);
+            
             for (let i = 0; i < phanMon.length; i++) {
                 if (phanMon[i] === "S") soShaker++;
                 else if (phanMon[i] === "G") soGloves++;
@@ -79,12 +81,12 @@ do {
             console.log("HÓA ĐƠN BÁN LẺ PHỤ KIỆN".padStart(32));
             console.log("Mã đơn: " + currentOrderCode);
             console.log("Món".padStart(10) + "SL".padStart(8) + "Thành tiền".padStart(22));
-            console.log("SHAKER".padStart(10) + String(soShaker).padStart(8) + tienShaker.toLocaleString("vi-VN").padStart(22));
-            console.log("GLOVES".padStart(10) + String(soGloves).padStart(8) + tienGloves.toLocaleString("vi-VN").padStart(22));
-            console.log("STRAP".padStart(10) + String(soStrap).padStart(8) + tienStrap.toLocaleString("vi-VN").padStart(22));
-            console.log("Tạm tính:".padStart(18) + tamTinh.toLocaleString("vi-VN").padStart(22));
-            console.log("Giảm VIP 10%:".padStart(18) + ("-" + giamGia.toLocaleString("vi-VN")).padStart(22));
-            console.log("THANH TOÁN:".padStart(18) + (tongTien.toLocaleString("vi-VN") + " VNĐ").padStart(22));
+            console.log("SHAKER".padStart(10) + String(soShaker).padStart(8) + tienShaker.toLocaleString("VNĐ").padStart(22));
+            console.log("GLOVES".padStart(10) + String(soGloves).padStart(8) + tienGloves.toLocaleString("VNĐ").padStart(22));
+            console.log("STRAP".padStart(10) + String(soStrap).padStart(8) + tienStrap.toLocaleString("VNĐ").padStart(22));
+            console.log("Tạm tính:".padStart(18) + tamTinh.toLocaleString("VNĐ").padStart(22));
+            console.log("Giảm VIP 10%:".padStart(18) + ("-" + giamGia.toLocaleString("VNĐ")).padStart(22));
+            console.log("THANH TOÁN:".padStart(18) + (tongTien.toLocaleString("VNĐ") + " VNĐ").padStart(22));
             currentOrderCode = "";
             isOrderValid = false;
             break;
@@ -95,4 +97,4 @@ do {
             console.log("Vui lòng nhập từ (1-3)");
             break;
     }
-} while (choice !== "3");
+}while (choice !== "3");
