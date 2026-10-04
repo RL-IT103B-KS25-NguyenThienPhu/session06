@@ -51,7 +51,7 @@ do {
                 console.log("Chưa có mã hợp lệ!");
                 break;
             }
-            let vip = prompt("Khách có thẻ VIP? (Y/N):");
+            let vip = prompt("Khách có thẻ VIP:");
             if (vip === null) vip = "";
             let isVip = (vip.trim().toUpperCase() === "Y");
             let soShaker = 0;
