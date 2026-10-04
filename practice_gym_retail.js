@@ -9,7 +9,7 @@ let priceStrap = 150000;
 
 do {
     choice = prompt(`
-    ========Bán lẻ Phụ kiện & Xử lý Biên lai Dòng lệnh Phòng Gym==========
+    =======bán lẻ phụ kiện và xử lý biên lai phòng gym==========
     1. Nhập và chuẩn hóa mã đơn hàng
     2. Tính tiền và in hóa đơn
     3. Thoát chương trình`);
