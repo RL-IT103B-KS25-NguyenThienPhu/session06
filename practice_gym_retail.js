@@ -19,7 +19,7 @@ do {
         case "1":
             currentOrderCode = "";
             isOrderValid = false;
-            let nhapMa = prompt("Nhập mã đơn hàng (VD: GYM-SGST):");
+            let nhapMa = prompt("Nhập mã đơn hàng:");
             if (nhapMa === null || nhapMa.trim() === "") {
                 console.log("Chưa nhập mã đơn hàng");
                 break;
