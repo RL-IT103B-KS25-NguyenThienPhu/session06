@@ -78,22 +78,18 @@ do {
             
             console.log("HÓA ĐƠN BÁN LẺ PHỤ KIỆN".padStart(32));
             console.log("Mã đơn: " + currentOrderCode);
-            console.log("-".repeat(40));
             console.log("Món".padStart(10) + "SL".padStart(8) + "Thành tiền".padStart(22));
-            console.log("-".repeat(40));
             console.log("SHAKER".padStart(10) + String(soShaker).padStart(8) + tienShaker.toLocaleString("vi-VN").padStart(22));
             console.log("GLOVES".padStart(10) + String(soGloves).padStart(8) + tienGloves.toLocaleString("vi-VN").padStart(22));
             console.log("STRAP".padStart(10) + String(soStrap).padStart(8) + tienStrap.toLocaleString("vi-VN").padStart(22));
-            console.log("-".repeat(40));
             console.log("Tạm tính:".padStart(18) + tamTinh.toLocaleString("vi-VN").padStart(22));
             console.log("Giảm VIP 10%:".padStart(18) + ("-" + giamGia.toLocaleString("vi-VN")).padStart(22));
             console.log("THANH TOÁN:".padStart(18) + (tongTien.toLocaleString("vi-VN") + " VNĐ").padStart(22));
-            console.log("-".repeat(40));
             currentOrderCode = "";
             isOrderValid = false;
             break;
         case "3":
-            console.log("Thoát chương trình" + totalOrders + " - Doanh thu: " + totalRevenue.toLocaleString("vi-VN") +" VNĐ");
+            console.log("Thoát chương trình" + totalOrders + " -doanh thu: " + totalRevenue.toLocaleString("vi-VN") +" VNĐ");
             break;
         default:
             console.log("Vui lòng nhập từ (1-3)");
