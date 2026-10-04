@@ -75,8 +75,7 @@ do {
             let tongTien = tamTinh - giamGia;
             totalRevenue += tongTien;
             totalOrders++;
-
-            console.log("-".repeat(40));
+            
             console.log("HÓA ĐƠN BÁN LẺ PHỤ KIỆN".padStart(32));
             console.log("Mã đơn: " + currentOrderCode);
             console.log("-".repeat(40));
